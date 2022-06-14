@@ -1,0 +1,16 @@
+{
+  "name": "get-age",
+  "version": "1.0.0",
+  "description": "Get Age from String",
+  "main": "./src/js/main.js",
+  "scripts": {
+    "test": "jest --watch-all",
+    "test-server": "cd src/ && http-server -c-1 -o"
+  },
+  "author": "André Kollmar",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "jest": "^28.1.1"
+  }
+}

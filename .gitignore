@@ -1,0 +1,7 @@
+# Dependency directories
+node_modules
+
+#testing
+*.test.js
+jestconfig.json
+index.html
