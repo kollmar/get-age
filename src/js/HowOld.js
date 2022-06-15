@@ -44,12 +44,16 @@ export class HowOld {
 			this.date = this.reverseDateString(this.date);
 		}
 
-		this.date = new Date(Intl.DateTimeFormat(this.timeFormat.lang, this.timeFormat.options)
-			.format(new Date(this.date)));
-		
 		if (this.isDateNaN(this.date)) {
 			throw { stack: 'Date is not a number' }
 		}
+		
+		try {
+			this.date = new Date(Intl.DateTimeFormat(this.timeFormat.lang, this.timeFormat.options)
+				.format(new Date(this.date)));			
+		} catch (error) {
+			throw { stack: 'Date is not a number' }			
+		}		
 
 		return this.date;
 	}
