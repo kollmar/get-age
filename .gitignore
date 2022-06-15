@@ -5,3 +5,4 @@ node_modules
 *.test.js
 jestconfig.json
 index.html
+coverage
