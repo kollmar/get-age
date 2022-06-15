@@ -1,7 +1,9 @@
 import { HowOld } from './HowOld.js';
 
-export function getAge(timeFormat) {	
+const getAge = (timeFormat) => {
 	return new HowOld(this, timeFormat);
 }
 
 String.prototype.getAge = getAge;
+
+export { getAge };
